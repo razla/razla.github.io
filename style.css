@@ -238,6 +238,14 @@ img {
   line-height: 1.55;
 }
 
+.pub-legend {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: -0.6rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
 .pub-footnote {
   font-size: 0.78rem;
   color: var(--muted);
