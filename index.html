@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raz Lapid – Academic Homepage</title>
+  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container">
+    <!-- ==================== HERO / BIO ==================== -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Raz Lapid</h1>
+        <p class="bio">
+          I'm the Chief Scientist at <a href="https://www.deepkeep.ai/" target="_blank">DeepKeep</a>,
+          holding a Ph.D. in Computer Science. My work focuses on
+          <strong>deep learning robustness</strong> and <strong>AI safety</strong>&mdash;leading
+          research on adversarial robustness, LLM security, and trustworthy AI,
+          developing methods to stress-test, attack, and defend modern neural networks under
+          real-world conditions.
+        </p>
+        <p class="bio">
+          My work spans adversarial attacks &amp; defenses for vision and language
+          models, black-box and gray-box threat models, jailbreaking of LLMs, and
+          the intersection of evolutionary computation with deep learning.
+          I've published at venues including ICLR, ICCV, NeurIPS, and AAAI.
+        </p>
+        <p class="affiliation">
+          Israel &middot; Chief Scientist @ DeepKeep &middot; Ph.D. in Computer Science
+        </p>
+        <nav class="links">
+          <a href="https://scholar.google.com/citations?user=ZvgO_hkAAAAJ" target="_blank">Google Scholar</a>
+          <span class="sep">/</span>
+          <a href="https://www.linkedin.com/in/raz-lapid/" target="_blank">LinkedIn</a>
+          <span class="sep">/</span>
+          <a href="mailto:raz.lapid@deepkeep.ai">Email</a>
+        </nav>
+      </div>
+      <div class="hero-image">
+        <img
+          src="assets/profile.jpg"
+          alt="Raz Lapid"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22280%22 height=%22280%22%3E%3Crect width=%22280%22 height=%22280%22 rx=%2216%22 fill=%22%23e2e8f0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Inter,sans-serif%22 font-size=%2218%22 fill=%22%2364748b%22%3EAdd profile.jpg%3C/text%3E%3C/svg%3E';"
+        />
+      </div>
+    </header>
+
+    <!-- ==================== RESEARCH INTERESTS ==================== -->
+    <section id="research" class="section">
+      <h2>Research Interests</h2>
+      <p>
+        My research centers on understanding and improving the robustness,
+        security, and trustworthiness of deep learning systems. I develop novel
+        attack methodologies to expose vulnerabilities in neural networks&mdash;from
+        adversarial patches that fool object detectors to black-box jailbreaks
+        that bypass LLM alignment&mdash;and design principled defenses to mitigate
+        these threats in deployment.
+      </p>
+
+    </section>
+
+    <!-- ==================== SELECTED PUBLICATIONS ==================== -->
+    <section id="publications" class="section">
+      <h2>Selected Publications</h2>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_benchoverflow.png" alt="BenchOverflow thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2601.08490" target="_blank">
+            BenchOverflow: Measuring Overflow in Large Language Models via Plain-Text Prompts
+          </a>
+          <span class="pub-venue">TMLR &middot; 2026</span>
+          <span class="pub-authors">E. Feiglin, N. Hutnik, <strong>R. Lapid</strong></span>
+          <p class="pub-desc">
+            Introduces BenchOverflow, a model-agnostic benchmark of nine plain-text prompting
+            strategies that induce excessive outputs without jailbreaks or policy circumvention.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_backdoor.png" alt="Backdoors thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2507.04726" target="_blank">
+            Backdoors in Conditional Diffusion: Threats to Responsible Synthetic Data Pipelines
+          </a>
+          <span class="pub-venue">RSD @ AAAI &middot; 2026</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, A. Dubin</span>
+          <p class="pub-desc">
+            Reveals backdoor vulnerabilities in ControlNet-based diffusion models
+            that threaten responsible synthetic data generation pipelines.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_audio.png" alt="Audio LLM attack thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2512.23881" target="_blank">
+            Breaking Audio Large Language Models by Attacking Only the Encoder
+          </a>
+          <span class="pub-venue">Preprint &middot; 2025</span>
+          <span class="pub-authors">R. Ziv, <strong>R. Lapid</strong>, M. Sipper</span>
+          <p class="pub-desc">
+            Proposes a universal targeted latent-space attack on audio-language models
+            by perturbing only the audio encoder.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_pertask.png" alt="Per-Task Quantization thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2511.06516" target="_blank">
+            You Had One Job: Per-Task Quantization Using LLMs' Hidden Representations
+          </a>
+          <span class="pub-venue">Preprint &middot; 2025</span>
+          <span class="pub-authors">A. LeVi, <strong>R. Lapid</strong>, R. Himelstein, C. Baskin, R.S. Ziv</span>
+          <p class="pub-desc">
+            Introduces task-aware post-training quantization that leverages LLMs' hidden
+            representations to allocate precision where it matters most.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_curtain.png" alt="Pulling Back the Curtain thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://openaccess.thecvf.com/content/ICCV2025W/SafeMM-AI/html/Mizrahi_Pulling_Back_the_Curtain_Unsupervised_Adversarial_Detection_via_Contrastive_Auxiliary_ICCVW_2025_paper.html" target="_blank">
+            Pulling Back the Curtain: Unsupervised Adversarial Detection via Contrastive Auxiliary Networks
+          </a>
+          <span class="pub-venue">ICCV Workshop (SafeMM-AI) &middot; Spotlight &middot; 2025</span>
+          <span class="pub-authors">E. Mizrahi, <strong>R. Lapid</strong>, M. Sipper</span>
+          <p class="pub-desc">
+            Presents an unsupervised contrastive-learning approach to detect adversarial
+            examples without requiring attack-specific training data.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_rag.png" alt="Don't Lag, RAG thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2504.04858" target="_blank">
+            Don't Lag, RAG: Training-Free Adversarial Detection Using RAG
+          </a>
+          <span class="pub-venue">VLM4RWD @ NeurIPS &middot; 2025</span>
+          <span class="pub-authors">R. Kazoom, <strong>R. Lapid</strong>, M. Sipper, O. Hadar</span>
+          <p class="pub-desc">
+            Proposes a training-free retrieval-augmented generation approach for
+            detecting adversarial patch attacks on vision systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_opensesame.png" alt="Open Sesame thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://www.mdpi.com/2076-3417/14/16/7150" target="_blank">
+            Open Sesame! Universal Black-Box Jailbreaking of Large Language Models
+          </a>
+          <span class="pub-venue">SeT-LLM @ ICLR &middot; 2024</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, R. Langberg, M. Sipper</span>
+          <p class="pub-desc">
+            Introduces a universal black-box jailbreaking method for LLMs using evolutionary
+            optimization, bypassing alignment safeguards without gradient access.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_xai.png" alt="XAI Deepfake thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2403.02955" target="_blank">
+            XAI-Based Detection of Adversarial Attacks on Deepfake Detectors
+          </a>
+          <span class="pub-venue">TMLR &middot; 2024</span>
+          <span class="pub-authors">B. Pinhasov, <strong>R. Lapid</strong>, R. Ohayon, M. Sipper</span>
+          <p class="pub-desc">
+            Uses eXplainable AI to identify adversarial manipulations targeting
+            deepfake detection systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_kan.png" alt="KAN robustness thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2408.13809" target="_blank">
+            On the Robustness of Kolmogorov-Arnold Networks: An Adversarial Perspective
+          </a>
+          <span class="pub-venue">TMLR &middot; 2024</span>
+          <span class="pub-authors">T. Alter, <strong>R. Lapid</strong>, M. Sipper</span>
+          <p class="pub-desc">
+            First systematic adversarial robustness evaluation of Kolmogorov-Arnold Networks (KANs).
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_fortify.png" alt="Fortify the Guardian thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://www.mdpi.com/2227-7390/12/22/3451" target="_blank">
+            Fortify the Guardian, Not the Treasure: Resilient Adversarial Detectors
+          </a>
+          <span class="pub-venue">Mathematics &middot; 2024</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, A. Dubin, M. Sipper</span>
+          <p class="pub-desc">
+            Addresses adaptive adversarial attacks on detector-based defenses and
+            proposes resilient detection architectures.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_iseadead.png" alt="I See Dead People thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://link.springer.com/chapter/10.1007/978-3-031-74643-7_21" target="_blank">
+            I See Dead People: Gray-Box Adversarial Attack on Image-to-Text Models
+          </a>
+          <span class="pub-venue">ECML-PKDD &middot; 2023</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, M. Sipper</span>
+          <p class="pub-desc">
+            Presents a gray-box attack against encoder-decoder image captioning models,
+            manipulating generated text through adversarial image perturbations.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_patch.png" alt="Patch of Invisibility thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2303.04238" target="_blank">
+            Patch of Invisibility: Naturalistic Physical Black-Box Adversarial Attacks on Object Detectors
+          </a>
+          <span class="pub-venue">ECML-PKDD &middot; 2024</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, E. Mizrahi, M. Sipper</span>
+          <p class="pub-desc">
+            Generates naturalistic adversarial patches that physically fool object
+            detectors using black-box evolutionary methods.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_foiling.png" alt="Foiling Explanations thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://arxiv.org/abs/2211.14860" target="_blank">
+            Foiling Explanations in Deep Neural Networks
+          </a>
+          <span class="pub-venue">TMLR &middot; 2022</span>
+          <span class="pub-authors">S.V. Tamam, <strong>R. Lapid</strong>, M. Sipper</span>
+          <p class="pub-desc">
+            Demonstrates that popular DNN explanation methods can be adversarially
+            manipulated to produce misleading interpretations.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_evolution.png" alt="Evolution of AFs thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://dl.acm.org/doi/abs/10.1145/3520304.3533949" target="_blank">
+            Evolution of Activation Functions for Deep Learning-Based Image Classification
+          </a>
+          <span class="pub-venue">GECCO &middot; 2022</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, M. Sipper</span>
+          <p class="pub-desc">
+            Uses evolutionary algorithms to discover novel activation functions
+            that outperform ReLU on image classification benchmarks.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-thumb">
+          <img src="assets/pub_blackbox.png" alt="Black-box algorithm thumbnail"
+               onerror="this.style.display='none'" />
+        </div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://www.mdpi.com/1999-4893/15/11/407" target="_blank">
+            An Evolutionary, Gradient-Free, Query-Efficient, Black-Box Algorithm for Generating Adversarial Instances in Deep CNNs
+          </a>
+          <span class="pub-venue">Algorithms &middot; 2022</span>
+          <span class="pub-authors"><strong>R. Lapid</strong>, Z. Haramaty, M. Sipper</span>
+          <p class="pub-desc">
+            Proposes a query-efficient evolutionary black-box attack that generates
+            adversarial examples without gradient information.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== HONORS & AWARDS ==================== -->
+    <section id="awards" class="section">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="award-list">
+        <li>
+          <strong>Rector's Award for Outstanding PhD Research</strong>
+          <span class="award-org">Ben-Gurion University of the Negev &middot; Oct 2024</span>
+        </li>
+        <li>
+          <strong>Teaching Excellence Award</strong>
+          <span class="award-org">Ben-Gurion University of the Negev &middot; Jun 2024</span>
+        </li>
+        <li>
+          <strong>Research Excellence Award for Graduate Students</strong>
+          <span class="award-org">Ben-Gurion University of the Negev &middot; Jun 2023</span>
+        </li>
+        <li>
+          <strong>Research Excellence Award for Graduate Students</strong>
+          <span class="award-org">Ben-Gurion University of the Negev &middot; Jun 2022</span>
+        </li>
+        <li>
+          <strong>Kreitman Foundation Scholarship for Excellent Doctoral Students</strong>
+          <span class="award-org">Ben-Gurion University of the Negev &middot; Oct 2021</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="section">
+      <h2>Professional Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">Jan 2025 &ndash;<br>Present</span>
+          <div class="what">
+            <span class="role">Chief Scientist</span> · Full-time<br>
+            <span class="org"><a href="https://www.deepkeep.ai/" target="_blank">DeepKeep</a></span>
+            <div class="desc">
+              Leading research on adversarial robustness, LLM security, and AI safety.
+              Developing attack and defense methodologies for production AI systems.
+            </div>
+          </div>
+        </li>
+        <li class="concurrent-group">
+          <span class="when">Mar 2022 &ndash;<br>Oct 2024</span>
+          <div class="what">
+            <div class="concurrent-item">
+              <span class="role">Research Scientist</span> · Part-time
+              <span class="concurrent-badge">Concurrent</span><br>
+              <span class="org"><a href="https://www.deepkeep.ai/" target="_blank">DeepKeep</a></span>
+              <div class="meta">Mar 2022 &ndash; Dec 2024 · Python &amp; Deep Learning</div>
+            </div>
+            <div class="concurrent-item">
+              <span class="role">Teaching Assistant</span> · Part-time
+              <span class="concurrent-badge">Concurrent</span><br>
+              <span class="org">Ben-Gurion University of the Negev</span>
+              <div class="meta">Oct 2021 &ndash; Oct 2024 · Introduction to Computer Science</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="when">Nov 2019 &ndash;<br>Oct 2021</span>
+          <div class="what">
+            <span class="role">Full Stack Engineer</span> · Part-time<br>
+            <span class="org"><a href="https://kamin.co.il/" target="_blank">Kamin</a></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+
+      <div class="edu-entry">
+        <div class="edu-date">2021 &ndash; 2024</div>
+        <div class="edu-details">
+          <strong>Ph.D. in Computer Science</strong> (Direct Track), Ben-Gurion University of the Negev
+          <p>Deep Learning and Evolutionary Computation. Advisor: Prof. Moshe Sipper.</p>
+        </div>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-date">2020 &ndash; 2021</div>
+        <div class="edu-details">
+          <strong>M.Sc. in Computer Science</strong>, Ben-Gurion University of the Negev
+          <p>Deep Learning and Evolutionary Computation. <em>Magna cum laude.</em></p>
+        </div>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-date">2016 &ndash; 2020</div>
+        <div class="edu-details">
+          <strong>B.Sc. in Computer Science</strong>, Ben-Gurion University of the Negev
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <p>&copy; 2026 Raz Lapid</p>
+    </footer>
+  </div>
+</body>
+</html>
