@@ -133,8 +133,8 @@ img {
 }
 
 .hero-image img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 6px 24px rgba(17, 24, 39, 0.08);
@@ -461,8 +461,8 @@ footer {
   }
 
   .hero-image img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 
   .hero-text h1 {
