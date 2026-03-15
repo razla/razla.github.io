@@ -322,6 +322,10 @@ img {
   z-index: 1;
 }
 
+.timeline li:first-child::before {
+  background: var(--accent);
+}
+
 .timeline .when {
   font-size: 0.8rem;
   color: var(--muted);
