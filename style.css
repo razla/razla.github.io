@@ -225,6 +225,15 @@ img {
   margin-bottom: 0.15rem;
 }
 
+.pub-venue-secondary {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.15rem;
+  font-style: italic;
+}
+
 .pub-authors {
   font-size: 0.82rem;
   color: var(--muted);
